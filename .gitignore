@@ -1,0 +1,11 @@
+# Ignore the following files and folders
+
+node_modules/
+bower_components/
+.DS_Store
+*.log
+build/
+*.node/
+components/
+*.orig/
+.idea/
