@@ -13,7 +13,9 @@
 /*.wordhyphen { @extend %wordhyphen; }*/
 
 $font-stack: 'Roboto Slab', 'Roboto', Helvetica, Arial, sans-serif;;
-
+$candice-favColour: #ff6699; $trip-advisor:#589442;
+$space-shuttle : #87ceeb; $healthy-eating: #562B40;
+$native-react : #67DAF9; $new-language: #29245F;
 
 html {
     min-height: 100%;
@@ -51,6 +53,10 @@ body {
   border: 10px solid white;
 }
 
+.modal.fade:not(.in).bottom-left .modal-dialog {
+	-webkit-transform: translate3d(-25%, 25%, 0);
+	transform: translate3d(-25%, 25%, 0);
+}
 
 #menu-container  {
 	ul {color:#fff;}
@@ -68,7 +74,6 @@ body {
 
 @import "mixins";
 .flexbox { @extend %flexbox; }
-
 .flexbox {
 	flex-wrap:wrap;
 }
@@ -76,12 +81,62 @@ body {
 .bucketholder{
 	border: 0px solid red;
 	.item {
-		height: 150px;
+		height: 200px;
 		border: 1px solid #fff;
 		margin: 0px;
-		/*background: DeepSkyBlue;*/
 		color: #fff;
-		width: 177px;
+		width: 25%;
+		padding: 0 5px;
+	}
+	.item:hover { cursor: pointer; }
+
+	.new-language:hover {background-color: $new-language;}
+	.new-language { color:$new-language;
+		.item-img { background: inherit; }
+		.item-underline { background-color: $new-language; }
+	}
+
+	.native-react:hover { background-color: $native-react;}
+	.native-react { color: $native-react;
+		.item-img { background: inherit; }
+		.item-underline { background-color: $native-react; }
+	}
+	
+	.trip-advisor:hover { background-color: $trip-advisor; }
+	.trip-advisor { color:$trip-advisor;
+		.item-img { background: inherit; }
+		.item-underline { background-color:$trip-advisor; }
+	}
+
+	.healthy-eating:hover { background-color: $healthy-eating; }
+	.healthy-eating { color:$healthy-eating;
+		.icon-img {background: inherit;}
+		.item-underline { background-color:$healthy-eating; }
+	}
+	
+	.space-shuttle:hover {background-color: $space-shuttle;}
+	.space-shuttle { color: $space-shuttle;
+		.icon-img { background: inherit; }
+		.item-underline {background-color: $space-shuttle;} 
+	}
+	
+	.candice-swanepoel:hover {background-color: $candice-favColour;}
+	.candice-swanepoel { color:$candice-favColour;
+		.icon-img {  background: inherit; }
+		.item-underline {background-color: $candice-favColour;}
+	}
+}
+
+
+.item {
+	.icon-img { color:inherit; background: inherit; margin:15px 0 0 0; text-align:center;}
+	.item-title {
+		text-transform:uppercase;
+		h5 { font-size:12pt; font-weight:bold; text-align:center; }
+	}
+	.item-underline {height: 1px; background-color: inherit;}
+	.item-category { text-align: center; font-weight:lighter; text-transform:uppercase;
+		h3 { font-size:12pt; }
 	}
 }
 
