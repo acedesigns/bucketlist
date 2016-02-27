@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+               .<@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>. 
+            .<@@@@@@   $$$$$$$$$$$$$$$$$$$$$\^^^^^^/$$$$@@@>. 
+         .<@@@@@<   .$$$$$'~       '~'$$$$$$$\  /$$$$$$>@@@@@>. 
+      .<@@@@@<'   o$$$$$$                `'$$$$$$$$$$$$  '>@@@@@>. 
+   .<@@@@@<'    o$$$$$$oo.                  )$$$$$$$$$$     '>@@@@@>. 
+   '<@@@@@<    o$$$$$$$$$$$.                                 >@@@@@>' 
+     '<@@@@<  o$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$oooooo...    >@@@@>' 
+       '@@@@< $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$)>@@@@>' 
+         '<@@@@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@>' 
+           '<@@@@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@>' 
+             '<@@@@<    .oooo.                    .$$@@@@>' 
+               '<@@@@oo$$$$$$$o..             ..o$$@@@@>' 
+                 '<@@@@$$$$$$$$$$$$$oooooooo$$$$$@@@@>' 
+                   '<@@@@'$$$$$$$$$$$$$$$$$$$$$@@@@>' 
+                     '<@@@@<   ~"SSSSSS"~   >@@@@>' 
+                       '<@@@@<            >@@@@>' 
+                         '<@@@@<        >@@@@>' 
+                           '<@@@@<    >@@@@>' 
+                             '<@@@@<>@@@@>' 
+                               '<@@@@@@>' 
+                                 '<@@>' 
+                                   ^^    
+
+-->
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  </head>
+
+  <body>
+    <!-- Logo-->
+    <div class="container">
+      <div class="col-md-12 form-group">
+        <div class="col-md-4 hidden-xs"></div>
+        <div class="col-md-4 col-xs-12">
+          <div class="logo-container">
+            <div class="text-goals">
+              <h5>my</h5>
+              <h1>Goals</h1>
+              <h5>for 2016</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-xs"></div>
+      </div>      
+    </div>
+    
+    <!-- Navigation -->
+    <div class="container">
+      <div class="col-md-12 form-group">
+        <div class="col-md-4 hidden-xs"></div>
+        <div class="col-md-5 col-xs-12">
+          <div id="menu-container">
+            <ul calss="menu">
+              <li><a href="#">Home</a> &mdash; </li> 
+              <li><a href="#">About</a>  &mdash; </li>
+              <li><a href="#">Blog</a> &mdash; </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 hidden-xs"></div>
+      </div>
+    </div>
+
+    <!-- Content-->
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div id="footer" class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
