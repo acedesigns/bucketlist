@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700|Oswald");
+/*!
+ * 
+ *
+ * Copyright (c) 2016 Anele MAqanda
+ */
+/*.wordhyphen { @extend %wordhyphen; }*/
+html {
+  min-height: 100%;
+  position: relative;
+  font-size: 12px; }
+
+body {
+  font-family: "Roboto Slab", "Roboto", Helvetica, Arial, sans-serif;
+  background: url("../img/website-bg.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.logo-container {
+  margin: 25px 0 0 0;
+  text-align: center;
+  color: #fff; }
+
+.text-goals h1 {
+  font-weight: 700;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  margin: 0; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
+.text-goals {
+  border: 10px solid white; }
+
+.modal.fade:not(.in).bottom-left .modal-dialog {
+  -webkit-transform: translate3d(-25%, 25%, 0);
+  transform: translate3d(-25%, 25%, 0); }
+
+#menu-container ul {
+  color: #fff; }
+
+#menu-container ul li {
+  float: left;
+  list-style-type: none;
+  margin: 0px 3px; }
+  #menu-container ul li a {
+    font-size: 12pt;
+    color: #fff; }
+  #menu-container ul li a:hover {
+    text-decoration: none; }
+
+/*!
+ * http://shouldiprefix.com/
+ *
+ * Copyright (c) 2016 Anele MAqanda
+ */
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.flexbox {
+  flex-wrap: wrap; }
+
+.bucketholder {
+  border: 0px solid red; }
+  .bucketholder .item {
+    height: 200px;
+    border: 1px solid #fff;
+    margin: 0px;
+    color: #fff;
+    width: 25%;
+    padding: 0 5px; }
+  .bucketholder .item:hover {
+    cursor: pointer; }
+  .bucketholder .new-language:hover {
+    background-color: #29245F; }
+  .bucketholder .new-language {
+    color: #29245F; }
+    .bucketholder .new-language .item-img {
+      background: inherit; }
+    .bucketholder .new-language .item-underline {
+      background-color: #29245F; }
+  .bucketholder .native-react:hover {
+    background-color: #67DAF9; }
+  .bucketholder .native-react {
+    color: #67DAF9; }
+    .bucketholder .native-react .item-img {
+      background: inherit; }
+    .bucketholder .native-react .item-underline {
+      background-color: #67DAF9; }
+  .bucketholder .trip-advisor:hover {
+    background-color: #589442; }
+  .bucketholder .trip-advisor {
+    color: #589442; }
+    .bucketholder .trip-advisor .item-img {
+      background: inherit; }
+    .bucketholder .trip-advisor .item-underline {
+      background-color: #589442; }
+  .bucketholder .healthy-eating:hover {
+    background-color: #562B40; }
+  .bucketholder .healthy-eating {
+    color: #562B40; }
+    .bucketholder .healthy-eating .icon-img {
+      background: inherit; }
+    .bucketholder .healthy-eating .item-underline {
+      background-color: #562B40; }
+  .bucketholder .space-shuttle:hover {
+    background-color: #87ceeb; }
+  .bucketholder .space-shuttle {
+    color: #87ceeb; }
+    .bucketholder .space-shuttle .icon-img {
+      background: inherit; }
+    .bucketholder .space-shuttle .item-underline {
+      background-color: #87ceeb; }
+  .bucketholder .candice-swanepoel:hover {
+    background-color: #ff6699; }
+  .bucketholder .candice-swanepoel {
+    color: #ff6699; }
+    .bucketholder .candice-swanepoel .icon-img {
+      background: inherit; }
+    .bucketholder .candice-swanepoel .item-underline {
+      background-color: #ff6699; }
+
+.help-block {
+  display: inline; }
+
+.item .icon-img {
+  color: inherit;
+  background: inherit;
+  margin: 15px 0 0 0;
+  text-align: center; }
+
+.item .item-title {
+  text-transform: uppercase; }
+  .item .item-title h5 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center; }
+
+.item .item-underline {
+  height: 1px;
+  background-color: inherit; }
+
+.item .item-category {
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase; }
+  .item .item-category h3 {
+    font-size: 12pt; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bucketholder .item {
+    width: 50%; } }
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .bucketholder .item {
+    width: 33%; } }
+
+@media screen and (min-width: 500px) and (max-width: 568px) {
+  .bucketholder .item {
+    width: 25%; } }

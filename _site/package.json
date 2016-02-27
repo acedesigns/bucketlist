@@ -1,0 +1,27 @@
+{
+  
+  "version": "0.1.0",
+  "description": "A simple  app",
+  "author": "Anele 'Ace' Maqanda <acedesigns123@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/acedesigns/bucketlist",
+  "dependencies": {
+    "gulp"              : "3.9.0",
+    "gulp-sass"         : "2.2.0",
+    "gulp-clean-css"    : "2.0.1",
+    "gulp-connect"      : "2.0.6"
+  },
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "gulp-install": "^0.6.0"
+  },
+  "contributors": [
+    "Anele Maqanda v0.1.0 <acedesigns123@gmail.com>"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+   "postinstall" : ""
+  }
+}
