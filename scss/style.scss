@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700|Oswald');
+/********************************/
+/* The Import of Google Maps    */
+/********************************/
 
 @charset "UTF-8";
-
 /*!
  * 
  *
@@ -9,8 +11,10 @@
  */
 
 
+/**************/
+/* Variables  */
+/**************/
 
-/*.wordhyphen { @extend %wordhyphen; }*/
 
 $font-stack: 'Roboto Slab', 'Roboto', Helvetica, Arial, sans-serif;;
 $candice-favColour: #ff6699; $trip-advisor:#589442;
@@ -53,11 +57,10 @@ body {
   border: 10px solid white;
 }
 
-.modal.fade:not(.in).bottom-left .modal-dialog {
-	-webkit-transform: translate3d(-25%, 25%, 0);
-	transform: translate3d(-25%, 25%, 0);
-}
 
+/*********************************/
+/* Navigation Styles : Nested    */
+/*********************************/
 #menu-container  {
 	ul {color:#fff;}
 	ul li {
@@ -72,12 +75,21 @@ body {
 	}
 }
 
+
+/*************/
+/* IMPORTS   */
+/*************/
+
 @import "mixins";
 .flexbox { @extend %flexbox; }
 .flexbox {
 	flex-wrap:wrap;
 }
 
+
+/*********************************/
+/* Bucket Lists Styles : Nested  */
+/*********************************/
 .bucketholder{
 	border: 0px solid red;
 	.item {
@@ -143,7 +155,20 @@ body {
 	}
 }
 
-// earlier Smart phones
+
+/****************************/
+/* Footer Styles : Nested   */
+/****************************/
+
+.footer {
+	a { color:#fff; margin: 0 10px }
+}
+
+/**************************/
+/* Media Query Styles     */
+/**************************/
+
+// Earlier Smart phones
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	.bucketholder .item {width:50%;}
 }

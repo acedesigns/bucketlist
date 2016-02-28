@@ -10,6 +10,22 @@ url: "acedesigns.co.za" # the base hostname & protocol for your site
 twitter_username: anele_ace
 github_username:  acedesigns
 
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: anele@acedesigns.co.za
+  facebook:
+  flickr:
+  github: acedesigns
+  instagram:
+  linkedin: anele
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: anele_ace
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
 # Build settings
 markdown: kramdown
 

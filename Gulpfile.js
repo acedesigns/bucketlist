@@ -18,7 +18,6 @@ var paths = {
 
 gulp.task('connect', function() {
   connect.server({
-    //root: paths.app, as it was producing ::: //Error: Forbidden
     root        : [__dirname],
     host        : 'localhost',
     livereload  : true,
@@ -36,7 +35,7 @@ gulp.task('html', function() {
 
 // Styles
 gulp.task('styles', function() {
-  return gulp.src('scss/style.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(sass({ style: 'expanded', }))
     .pipe(gulp.dest('css/'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -49,9 +48,9 @@ gulp.task('watch', function() {
 
 
 //Watch task
-gulp.task('default', ['watch']);
+//gulp.task('default', ['watch']);
 
-//gulp.task('default', function() {
-    //gulp.watch('scss/**/*.scss',['styles']);
-//});
+gulp.task('default', function() {
+	gulp.watch('scss/**/*.scss',['styles']);
+});
 

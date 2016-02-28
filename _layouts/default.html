@@ -34,7 +34,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/circle.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/circle.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
 
@@ -81,11 +81,17 @@
       {{ content }}
     </div>
 
-    <div id="footer" class="wrapper-footer">
+    <div id="footer" class="wrapper-footer form-group">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        <div class="col-md-12">
+          <div class="col-md-4 hidde-xs"></div>
+          <div class="col-md-4">
+            <footer class="footer">
+              {% include svg-icons.html %}
+            </footer>
+          </div>
+          <div class="col-md-4 hidde-xs"></div>
+        </div>
       </div>
     </div>
 

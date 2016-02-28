@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700|Oswald");
+/********************************/
+/* The Import of Google Maps    */
+/********************************/
 /*!
  * 
  *
  * Copyright (c) 2016 Anele MAqanda
  */
-/*.wordhyphen { @extend %wordhyphen; }*/
+/**************/
+/* Variables  */
+/**************/
 html {
   min-height: 100%;
   position: relative;
@@ -36,10 +41,9 @@ body {
 .text-goals {
   border: 10px solid white; }
 
-.modal.fade:not(.in).bottom-left .modal-dialog {
-  -webkit-transform: translate3d(-25%, 25%, 0);
-  transform: translate3d(-25%, 25%, 0); }
-
+/*********************************/
+/* Navigation Styles : Nested    */
+/*********************************/
 #menu-container ul {
   color: #fff; }
 
@@ -53,6 +57,9 @@ body {
   #menu-container ul li a:hover {
     text-decoration: none; }
 
+/*************/
+/* IMPORTS   */
+/*************/
 /*!
  * http://shouldiprefix.com/
  *
@@ -67,6 +74,9 @@ body {
 .flexbox {
   flex-wrap: wrap; }
 
+/*********************************/
+/* Bucket Lists Styles : Nested  */
+/*********************************/
 .bucketholder {
   border: 0px solid red; }
   .bucketholder .item {
@@ -127,6 +137,9 @@ body {
     .bucketholder .candice-swanepoel .item-underline {
       background-color: #ff6699; }
 
+.help-block {
+  display: inline; }
+
 .item .icon-img {
   color: inherit;
   background: inherit;
@@ -151,6 +164,16 @@ body {
   .item .item-category h3 {
     font-size: 12pt; }
 
+/****************************/
+/* Footer Styles : Nested   */
+/****************************/
+.footer a {
+  color: #fff;
+  margin: 0 10px; }
+
+/**************************/
+/* Media Query Styles     */
+/**************************/
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .bucketholder .item {
     width: 50%; } }

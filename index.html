@@ -92,7 +92,17 @@ layout: default
 			</div>
 		</div>
 
-		<div class="item"></div>
+		<div class="item">
+			<ul>
+			{% for member in site.data.members %}
+			  <li>
+			    <a href="https://github.com/{{ member.github }}">
+			      {{ member.name }}
+			    </a>
+			  </li>
+			{% endfor %}
+			</ul>
+		</div>
 	</div>
 	</div>
 	<div class="col-md-2 hidden-xs"></div>
